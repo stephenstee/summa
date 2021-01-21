@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey form</title>
+</head>
+<body bgcolor="aqua">
+	<div align="center">
+<h1><u>Restaurant Feedback Survey</u></h1>
+<small>Please let us know how was the food and service.</small>
+	</div>
+
+<div align="center">
+<form action="data.html" method="GET">
+	<div>
+		<p>Dine In/ Take Out:</p>
+		<input type="radio" name="dinein" id="in" value="dinein">
+		<label for="in">Dine In</label>
+		<input type="radio" id="out" name="takeout" value="takeout">
+		<label for="out">Take Out</label>
+
+	</div>
+	<div>
+		<p>Food Quality:</p>
+		<input type="radio" id="quality" name="foodquality" value="excellent">
+		<label for="quality">Excellent</label>
+		<input type="radio" id="quality" name="foodquality" value="good">
+		<label for="quality">Good</label>
+		<input type="radio" id="quality" name="foodquality" value="average">
+		<label for="quality">Average</label>
+	</div>
+	<div>
+		<p>Cleanliness:</p>
+		<input type="radio" id="quality" name="cleanliness" value="excellent">
+		<label for="quality">Excellent</label>
+		<input type="radio" id="quality" name="cleanliness" value="good">
+		<label for="quality">Good</label>
+		<input type="radio" id="quality" name="cleanliness" value="average">
+		<label for="quality">Average</label>
+	</div>
+	<div>
+		<p>Overall Experience:</p>
+		<input type="radio" id="quality" name="experience" value="excellent">
+		<label for="quality">Excellent</label>
+		<input type="radio" id="quality" name="experience" value="good">
+		<label for="quality">Good</label>
+		<input type="radio" id="quality" name="experience" value="average">
+		<label for="quality">Average</label>
+	</div>
+	<div>
+		<p>Any comments, questions or suggestions?</p>
+   	<textarea name="suggestions"  rows="10" cols="50"></textarea>
+</div>
+<div>
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" placeholder="you're name" required>
+</div>
+<div>
+   	<label for="gender">Male:</label>
+   	<input type="checkbox" id="gender" name="gender" value="male">
+   	<label for="gender">Female:</label>
+   	<input type="checkbox" id="gender" name="gender" value="female">
+    <label for="gender">Other:</label>
+   	<input type="checkbox" id="gender" name="gender" value="others">
+</div>
+<div>
+   	<label for="email">Email-Id: (optional)</label>
+   	<input type="email" name="email-id" id="email" placeholder="mail-id">
+</div>
+<div >
+   	<label for="age">Age:</label>
+   	<select name="age">
+   		<option>Please select</option>
+   		<option value="under 13">under 13</option>
+   		<option value="13-17">13-17</option>
+   		<option value="18-24">18-24</option>
+   		<option value="25-34">25-34</option>
+   		<option value="35-44">35-44</option>
+   		<option value="45-54">45-54</option>
+   		<option value="above 54">above 54</option>
+   	</select>
+</div>
+<div>
+   	<label for="num">Phone no:</label>
+   	<input type="text" name="phone-no" id="num" placeholder="phone number" required>
+</div>
+<hr>
+ 	<button>submit</button>
+</form>
+</div>
+</body>
+</html>
